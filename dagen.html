@@ -28,17 +28,17 @@
 
         document.getElementById("normal").innerHTML = days;
 
-        const workdays = days.slice(0, 5);
-        document.getElementById("werkdagen").innerHTML = workdays.toString();
+        // const workdays = days.slice(0, 5);
+        document.getElementById("werkdagen").innerHTML = days.slice(0, 5).toString();
 
-        const weekend = days.reverse().slice(0, -5);
-        document.getElementById("weekend").innerHTML = weekend.reverse().toString();
+        // const weekend = days.reverse().slice(0, -5);
+        document.getElementById("weekend").innerHTML = days.reverse().slice(0, -5).reverse().toString();
 
         document.getElementById("reverse").innerHTML = days;
 
-        document.getElementById("reverse_workdays").innerHTML = workdays.reverse();
+        document.getElementById("reverse_workdays").innerHTML = days.reverse().slice(0, 5).reverse().toString();
 
-        document.getElementById("reverse_weekend").innerHTML = weekend.reverse();
+        document.getElementById("reverse_weekend").innerHTML = days.reverse().slice(0, -5);
 
 
 
